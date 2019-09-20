@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vocabu</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+    <%= yield %>
+    <script>
+    var boxinput = window.document.getElementById('box_form')
+    var inputt = window.document.getElementById('inputt')
+
+    inputt.addEventListener("keypress", sizeinput)
+
+    function sizeinput() {
+      var inputtv = window.document.getElementById('inputt').value
+      value_inputt =  inputtv.length
+      if (value_inputt < 155){
+        inputt.style.width = `${(value_inputt/1.8) + 15}vw`
+      }
+    }
+</script>
+
+  </body>
+</html>

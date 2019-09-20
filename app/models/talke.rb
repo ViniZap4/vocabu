@@ -1,0 +1,2 @@
+class Talke < ApplicationRecord
+end

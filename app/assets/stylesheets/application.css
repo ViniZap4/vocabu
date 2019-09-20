@@ -1,0 +1,85 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    transition: 0.6s;
+    font-family: 'Chilanka', cursive;
+
+}
+
+
+
+/*            INPUT BOX AREA                */
+
+textarea:focus,
+input:focus,
+select:focus {
+    border-color: none !important;
+    outline: 0;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+#box_form{
+    
+    width: 100vw;
+    height: 5vh;
+    position: fixed;
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+#inputt, .submit_button{
+    text-align: center;
+    border:none;
+    background-color:transparent;
+    font-size: 1.2vw;
+    
+}
+#inputt{
+    border-bottom: 1px solid black;
+    transform: scale(0.9);
+    width: 15vw;
+}
+.submit_button{
+    padding: 6px;
+
+}
+#inputt:hover, .submit_button:hover ,#inputt:focus{
+    transform: scale(1);
+  
+}
+.submit_button:hover, .submit_button:focus{
+    background-color: rgba(70, 70, 70, 0.952);
+
+    border-radius:15px;
+    color:#fff;
+}
+#top{
+  position: fixed;
+  left: 1vw;
+  top: 1vw;
+}
+
+/*            CONTENT BOX AREA                */
+
+#content{
+    height:95vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+#user,#comp{
+    font-size: 2.2vw;
+
+}
+
+.name{
+  font-size: 1vw;
+  color:rgb(0, 0, 88);
+}

@@ -1,0 +1,30 @@
+
+<div id="box_form">
+<form action="home/cancel" method="post" id="top">
+    <input type="submit"  value="cancelar esse aprendizado" class="submit_button"> 
+   
+</form>
+<form action="home/res" method="post">
+    <input type="text"    name="inputt"  id="inputt"> 
+    <input type="submit"  value="enviar" class="submit_button"> 
+   
+</form>
+
+</div >
+
+
+
+<div id="content">
+<div id="comp"><span class="name">vocabu: </span> Como reagir a "<%=   @inputts.last.message %>"</div>
+<div id="user"><span class="name">User: </span><%=  @inputts.last.message %></div>
+
+</div>
+<!-- <%=  @inputts.last.message %><br> -->
+
+
+<h1> Vocabu aprendendo </h1>
+
+
+
+
+
